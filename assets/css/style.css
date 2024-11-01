@@ -27,6 +27,25 @@ a {
     color:  #cefffc;
 }
 
+button {
+    background-color: #66fcf246;
+    border-radius: 10px;
+    color: #cefffc;
+    padding: 10px;
+}
+
+input {
+    background-color: #83fff770;
+    border-radius: 10px;
+    color: #cefffc;
+    padding: 10px;
+}
+
+.reg_login_form {
+    text-align: center;
+    align-content: center;
+}
+
 .title {
     text-align: center;
     margin-bottom: -50px;
