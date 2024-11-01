@@ -1,14 +1,28 @@
+h1 {
+    color: #66fcf1
+}
+img {
+    border-radius: 20px;
+}
+
 /* Основные стили */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #0b0c10;
+    color: #c5c6c7;
 }
 
 header, footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #1f2833;
+    color: white;
     padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color:  #cefffc;
 }
 
 .navbar {

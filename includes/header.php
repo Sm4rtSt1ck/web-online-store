@@ -1,6 +1,6 @@
 <header>
     <div class="navbar">
-        <a href="index.php?page=home"><img src="assets/images/logo.png" alt="Логотип" class="logo"></a>
+        <a href="index.php?page=home"><img src="assets/images/logo-128.png" alt="Логотип" class="logo"></a>
         <nav>
             <ul>
                 <li><a href="index.php?page=home">Главная</a></li>

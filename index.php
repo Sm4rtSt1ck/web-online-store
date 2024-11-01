@@ -12,14 +12,18 @@ include_once 'includes/functions.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BoberKurwaStore</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/logo-32.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<?php include 'includes/header.php'; ?> <!-- Подключаем шапку -->
+<?php include 'includes/header.php'; ?>
 
 <main>
     <?php
-    // Загрузка контента в зависимости от запроса
     $page = $_GET['page'] ?? 'home';
     $allowed_pages = ['home', 'shop', 'contact', 'login', 'register', 'profile'];
     if (in_array($page, $allowed_pages)) {
@@ -30,8 +34,8 @@ include_once 'includes/functions.php';
     ?>
 </main>
 
-<?php include 'includes/footer.php'; ?> <!-- Подключаем футер -->
+<?php include 'includes/footer.php'; ?>
 
-<script src="assets/js/main.js"></script>
+<!-- <script src="assets/js/main.js"></script> -->
 </body>
 </html>
