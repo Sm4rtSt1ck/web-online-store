@@ -21,7 +21,7 @@ include_once 'includes/functions.php';
     <?php
     // Загрузка контента в зависимости от запроса
     $page = $_GET['page'] ?? 'home';
-    $allowed_pages = ['home', 'shop', 'contact'];
+    $allowed_pages = ['home', 'shop', 'contact', 'login', 'register'];
     if (in_array($page, $allowed_pages)) {
         include "pages/{$page}.php";
     } else {
