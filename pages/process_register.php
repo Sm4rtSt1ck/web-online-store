@@ -6,11 +6,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
     $email = $_POST['email'];
-
-    // Хеширование пароля для безопасности
     $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
-    // Проверка уникальности имени пользователя и электронной почты
     $stmt = $connection->prepare("SELECT * FROM users WHERE username = ? OR email = ?");
     $stmt->bind_param("ss", $username, $email);
     $stmt->execute();
@@ -18,17 +15,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($result->num_rows > 0) {
         $error = "Пользователь с таким именем или электронной почтой уже существует.";
+        header("Location: ../index.php?page=register&error=" . urlencode($error));
+        exit;
     } else {
-        // Добавление нового пользователя в базу данных
         $stmt = $connection->prepare("INSERT INTO users (username, password_hash, email) VALUES (?, ?, ?)");
         $stmt->bind_param("sss", $username, $password_hash, $email);
         if ($stmt->execute()) {
-            header("Location: login.php");
+            header("Location: ../index.php?page=login");
             exit;
         } else {
             $error = "Ошибка регистрации.";
-            // header("Location: register.php");
-            // exit;
+            header("Location: ../index.php?page=register&error=" . urlencode($error));
+            exit;
         }
     }
 }

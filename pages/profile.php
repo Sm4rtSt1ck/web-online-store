@@ -1,6 +1,6 @@
 <?php
-include_once '../config.php';
-include_once '../includes/db.php';
+include_once './config.php';
+include_once './includes/db.php';
 
 session_start();
 
@@ -30,6 +30,6 @@ $user = $stmt->get_result()->fetch_assoc();
     <p>Email: <?php echo htmlspecialchars($user['email']); ?></p>
     <p>Дата регистрации: <?php echo htmlspecialchars($user['created_at']); ?></p>
 
-    <a href="logout.php">Выйти</a>
+    <a href="index.php?page=logout">Выйти</a>
 </body>
 </html>
