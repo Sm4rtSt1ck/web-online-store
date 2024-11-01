@@ -1,5 +1,5 @@
 <?php
-// Подключение к базе данных
+// Подключение к бд
 include_once 'config.php';
 include_once 'includes/db.php';
 include_once 'includes/functions.php';

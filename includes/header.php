@@ -1,4 +1,5 @@
 <header>
+    <h1 class="title">BoberKurwaStore</h1>
     <div class="navbar">
         <a href="index.php?page=home"><img src="assets/images/logo-128.png" alt="Логотип" class="logo"></a>
         <nav>
