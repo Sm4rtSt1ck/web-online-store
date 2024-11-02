@@ -6,7 +6,8 @@ img {
 }
 
 body {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: "Rubik Wet Paint", serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     background-color: #0b0c10;
@@ -117,4 +118,37 @@ footer {
 
 .product-desc {
     text-align: center;
+}
+
+.home {
+    text-align: center;
+    padding: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.category {
+    background-color: #1f2833;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    color: #c5c6c7;
+    text-align: left;
+}
+
+.category h2 {
+    color: #66fcf1;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.category p {
+    line-height: 1.5;
 }
