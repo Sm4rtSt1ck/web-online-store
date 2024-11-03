@@ -39,6 +39,9 @@ ob_start();
 
 <?php include 'includes/footer.php'; ?>
 
-<!-- <script src="assets/js/main.js"></script> -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/loadEffect.js"></script>
+<script src="assets/js/scrollEffect.js"></script>
+
 </body>
 </html>
