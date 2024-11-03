@@ -1,8 +1,11 @@
 <?php
+session_start();
 // Подключение к бд
 include_once 'config.php';
 include_once 'includes/db.php';
 include_once 'includes/functions.php';
+
+ob_start();
 ?>
 
 <!DOCTYPE html>
@@ -15,8 +18,8 @@ include_once 'includes/functions.php';
     <link rel="icon" href="assets/images/logo-32.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
 </head>
 <body>
 

@@ -43,7 +43,7 @@
 
 ## Ресурсы
 - **Логотип:** [FlatIcon](https://www.flaticon.com/free-icon/beaver_2611873)
-- **Шрифты:** [Google Fonts](https://fonts.google.com)
+- **Шрифты:** [Google Fonts](https://fonts.google.com/specimen/Rubik+Wet+Paint)
 
 ## Отдельное спасибо
 - **ChatGPT:** За помощь с формулировкой этого ридми и описания магазина.
